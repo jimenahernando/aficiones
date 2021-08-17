@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aficiones';
+  
+  listaAficiones : any[];
+
+  constructor(){
+    this.listaAficiones =  new Array(
+      { nombre: 'Ramiro',
+        aficion: 'Pasar calor'},
+      {
+        nombre: 'Alejandro',
+        aficion: 'Macrame'
+      }
+    );
+  }
 }

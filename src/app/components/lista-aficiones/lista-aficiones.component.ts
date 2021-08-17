@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-lista-aficiones',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaAficionesComponent implements OnInit {
 
-  constructor() { }
+  @Input() aficiones: any[];
+
+  constructor() { 
+    this.aficiones = new Array();
+  }
 
   ngOnInit(): void {
+    console.log(this.aficiones)
   }
 
 }
