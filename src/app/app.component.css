@@ -1,0 +1,17 @@
+section{
+    display: flex;
+    /* nos permite poner cuanto ocupa cada  */
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+section div:first-child{
+    width: 30%;
+    padding: 10px;
+}
+section div:last-child{
+    width: 70%;
+    padding: 10px;
+}
