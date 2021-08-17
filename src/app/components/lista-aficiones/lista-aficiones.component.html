@@ -1,9 +1,13 @@
 <section>
     <h2>Lista de Aficiones</h2>
-    <article>
+    <!-- <article>
         <h3>{{aficiones[0].nombre}} - {{aficiones[0].aficion}}</h3>
     </article>
     <article>
         <h3>{{aficiones[1].nombre}} - {{aficiones[1].aficion}}</h3>
-    </article>
+    </article> -->
+    
+    <!-- Vamos a pintar los articles de manera dinamica -->
+    <div [innerHTML]="mostrarLista()">
+    </div>
 </section>

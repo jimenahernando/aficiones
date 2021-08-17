@@ -8,3 +8,9 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.article{
+    background-color: lightcoral;
+    padding: 15px;
+    margin: 10px 0;
+}

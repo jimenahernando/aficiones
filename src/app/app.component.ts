@@ -19,4 +19,10 @@ export class AppComponent {
       }
     );
   }
+
+  onAficionCreada($event: any) {
+    // console.log('app.component', $event);
+    this.listaAficiones.push($event);
+    // console.log(this.listaAficiones);
+  }
 }

@@ -14,7 +14,17 @@ export class ListaAficionesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.aficiones)
+    // console.log(this.aficiones)
   }
 
+  // metodo que nos permite recorrer la lista de aficiones con articles consecutivos
+  mostrarLista(): any{
+    let result = "";
+    for(let aficion of this.aficiones){
+      result += `<article class="article" >
+                  <h3>${aficion.nombre} - ${aficion.aficion}</h3>
+                </article>`;
+    }
+    return result;
+  }
 }

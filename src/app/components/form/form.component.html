@@ -1,11 +1,11 @@
 <div class="form">
     <div class="">
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre">
+        <input type="text" id="nombre" [(ngModel)]="nombre">
     </div>
     <div class="">
         <label for="aficion">Aficion</label>
-        <input type="text" id="aficion">
+        <input type="text" id="aficion" [(ngModel)]="aficion">
     </div>
-    <button>Guardar</button>
+    <button (click)="guardarDatos()">Guardar</button>
 </div>
